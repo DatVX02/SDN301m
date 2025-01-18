@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "8b64fe0b-260a-4082-b392-2d9e5b40d383",
+		"name": "SDN301m",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23264614",
+		"_collection_link": "https://lunar-comet-919115.postman.co/workspace/Time-share~fbff37af-cb3c-4ebb-8034-88c27ff418c0/collection/23264614-8b64fe0b-260a-4082-b392-2d9e5b40d383?action=share&source=collection_link&creator=23264614"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/category/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"category",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDhmMmYxNWI5MGNlOTg3ZWJiZWRkN2EiLCJ1cyI6ImFkbWluIiwiaWF0IjoxNzMwODI3OTY0LCJleHAiOjE3MzA4MzE1NjR9.AlZbi4wEsKIanNfMTOUUCwCOGKd7irsjRn4HuulwqpM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDhmMmYxNWI5MGNlOTg3ZWJiZWRkN2EiLCJ1cyI6ImFkbWluIiwiaWF0IjoxNzMwODI3OTY0LCJleHAiOjE3MzA4MzE1NjR9.AlZbi4wEsKIanNfMTOUUCwCOGKd7irsjRn4HuulwqpM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/category/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"category",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "648f2f15b90ce987ebbedd7a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDhmMmYxNWI5MGNlOTg3ZWJiZWRkN2EiLCJ1cyI6ImFkbWluIiwiaWF0IjoxNzMwODI3OTY0LCJleHAiOjE3MzA4MzE1NjR9.AlZbi4wEsKIanNfMTOUUCwCOGKd7irsjRn4HuulwqpM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoryName\": \"name\",\r\n    \"categoryDescription\": \"description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDhmMmYxNWI5MGNlOTg3ZWJiZWRkN2EiLCJ1cyI6ImFkbWluIiwiaWF0IjoxNzMwODI3OTY0LCJleHAiOjE3MzA4MzE1NjR9.AlZbi4wEsKIanNfMTOUUCwCOGKd7irsjRn4HuulwqpM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoryName\": \"name1\",\r\n    \"categoryDescription\": \"description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/category/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"category",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "672a5750ee4f0da898cf01f9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDhmMmYxNWI5MGNlOTg3ZWJiZWRkN2EiLCJ1cyI6ImFkbWluIiwiaWF0IjoxNzMwODI3OTY0LCJleHAiOjE3MzA4MzE1NjR9.AlZbi4wEsKIanNfMTOUUCwCOGKd7irsjRn4HuulwqpM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/category/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"category",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "672a5750ee4f0da898cf01f9"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
